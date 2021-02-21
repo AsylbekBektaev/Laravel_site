@@ -1,0 +1,660 @@
+@each $class in 'infoSectionWelcome','infoSectionRates' ,'infoSectionCompany','infoSectionContact','infoSectionSupport'{
+    .#{$class} {
+        display:none;
+        width:100%;
+        height:100%;
+        max-width: 1440px;
+        min-width: 320px;
+        margin:auto auto;
+        z-index: 3;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: auto;
+        background: rgba(27, 14, 58, 0.5);
+        transform: translate(0,0);
+        transition: all linear 1s;
+        .block{
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            max-width: 771px;
+            height: 80%;
+            background-color: white;
+            border-radius: 22px 22px 20px 20px;
+            font: 18px/22.05px KR, sans-serif;
+            color: black;
+            border: 0;
+            box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease-out;
+            z-index: 1000;
+            right: 0;
+            bottom: auto;
+            transform: translate(0%, 0%);
+            @media screen and (max-width: 1024px){
+                max-width:771px;
+            }
+            @media screen and (max-width: 768px){
+                max-width: 628px;
+            }
+            @media screen and (max-width: 376px){
+                max-width: 335px;
+            }
+            @media screen and (max-width: 320px){
+                max-width: 298px;
+            }
+            @if(#{$class} == 'infoSectionWelcome') {
+                margin: 20% auto;
+            }
+            @if(#{$class} == 'infoSectionRates') {
+                margin: 10% auto;
+                max-height: 90%;
+                display: flex;
+                flex-direction: column;
+            }
+            @if(#{$class} == 'infoSectionCompany') {
+                margin: 10% auto;
+            }
+            @if(#{$class} == 'infoSectionContact'){
+                margin:3% auto;
+                height: 90%;
+            }
+            @if(#{$class} == 'infoSectionSupport'){
+                margin:3% auto;
+                height: 90%;
+            }
+            .closeBlock{
+                background: rgba(64, 162, 211, 1);
+                border-radius: 20px 20px 0 0;
+                width:100%;
+                height:60px;
+                @media screen and (max-width: 1024px) {
+                    height:60px;
+                }
+                @media screen and (max-width: 768px) {
+                    height:60px;
+                }
+                @media screen and (max-width:376px) {
+                    height:35px;
+                }
+                @media screen and (max-width:320px) {
+                    height:35px;
+                }
+
+                .text1 {
+                    color: white;
+                    width:100%;
+                    text-align: center;
+                    font:540  24px/29.4px KR,sans-serif;
+                    padding:24px 0 0 0;
+                    margin: -10px 0 10px 0;
+                    @if(#{$class} == 'infoSectionRates' or #{$class} == 'infoSectionCompany') {
+                      display: none;
+                    }
+                    @if(#{$class} == 'infoSectionCompany'){
+                        @media screen and (max-width: 1024px) {
+                            font:540  23px/22.4px KR,sans-serif;
+                            margin: -10px 0 10px 0;
+                        }
+                        @media screen and (max-width: 768px) {
+                            font:540  17px/22.4px KR,sans-serif;
+                            margin: -2px 0 10px 0;
+                        }
+                        @media screen and (max-width:376px) {
+                            margin: 0 0 10px 0;
+                            padding:14px 0 0 0;
+                            font:540  10px/13.4px KR,sans-serif;
+                        }
+                        @media screen and (max-width:320px) {
+                            margin: 0 0 10px 0;
+                            padding:  8px 0 0 14px;
+                            font:540  9px/11.4px KR,sans-serif;
+                            width: 89%;
+                        }
+                    }
+                    @media screen and (max-width: 1024px) {
+                        font:540  24px/22.4px KR,sans-serif;
+                        margin: -10px 0 10px 0;
+                    }
+                    @media screen and (max-width: 768px) {
+                        font:540  18px/22.4px KR,sans-serif;
+                        margin: -2px 0 10px 0;
+                    }
+                    @media screen and (max-width:376px) {
+                        margin: 0 0 10px 0;
+                        padding:14px 0 0 0;
+                        font:540  11px/13.4px KR,sans-serif;
+                    }
+                    @media screen and (max-width:320px) {
+                        margin: 0 0 10px 0;
+                        padding:14px 0 0 0;
+                        @if(#{$class} == 'infoSectionCompany'){
+                            margin: 0 0 10px 0;
+                            padding:  14px 0 0 14px;
+                            font:540  9px/11.4px KR,sans-serif;
+                            width: 89%;
+                        }
+                    }
+                }
+                img{
+                    position: absolute;
+                    right:20px;
+                    top:9px;
+                    width:25px;
+                    height:25px;
+                    @if(#{$class} == 'infoSectionRates'){
+                        top:17px;
+                    }
+                    @media screen and (max-width: 1024px) {
+                        right: 18px;
+                        top: 18px;
+                        width: 22px;
+                        height: 22px;
+                    }
+                    @media screen and (max-width: 768px) {
+                        right:22px;
+                        top:22px;
+                    }
+                    @media screen and (max-width:376px) {
+                        width:12px;
+                        height:12px;
+                        right:18px;
+                        top:15px;
+                    }
+                    @media screen and (max-width:320px) {
+                        top:15px;
+                    }
+                }
+            }
+            @if(#{$class} == 'infoSectionRates') {
+                @each $class in 'moneyContent', 'mobileContent','partnersContent','televisionContent',
+                                'transportContent', 'bukContent','utilContent','mobileSngContent',
+                                'electronContent','ElMoneyContent','LocalUZServices','SurSertificate',
+                                'GameContent','SocSet','PROServices'{
+                    .#{$class}{
+                        width:100%;
+                        display: none;
+                        height: 100%;
+                        overflow: auto;
+                        margin: 0;
+                        @if (info) {
+                            .info {
+                                width: auto;
+                                height: auto;
+                                background: #FCFBFB;
+                                border-radius: 20px;
+                                display: flex;
+                                margin: 30px 59px 10px 59px;
+                                border:solid 1px black;
+                                @media screen and (max-width: 376px) {
+                                    margin:15px 15px;
+                                }
+                                .text1 {
+                                    width: 80%;
+                                    height: auto;
+                                    padding: 0 0 0 46px;
+                                    margin: 0 auto;
+                                    //word-break: break-all;
+                                    word-wrap: break-word;
+                                    border-right: solid .8px black;
+                                    font:540  18px/28px KR,sans-serif;
+                                    @media screen and (max-width: 1024px) {
+                                        font:540  18px/28px KR,sans-serif;
+                                    }
+                                    @media screen and (max-width: 768px) {
+                                        width: 70%;
+                                        font:540  14px/22px KR,sans-serif;
+                                    }
+                                    @media screen and (max-width: 376px) {
+                                        width: 70%;
+                                        font:540  10px/12px KR,sans-serif;
+                                        padding: 0 0 0 20px;
+
+                                    }
+
+                                }
+
+                                .text2 {
+                                    width: 20%;
+                                    height:auto;
+                                    margin:auto;
+                                    text-align: center;
+                                    @media screen and (max-width: 1024px) {
+                                        font:540  18px/22px KR,sans-serif;
+                                    }
+                                    @media screen and (max-width: 768px) {
+                                        width:10%;
+                                        font:540  14px/17px KR,sans-serif;
+                                    }
+                                    @media screen and (max-width: 376px) {
+                                        font:540  10px/12px KR,sans-serif;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+            @if(#{$class} == 'infoSectionWelcome'){
+                @if(welcomeText) {
+                    .welcomeText{
+                        font:540  18px/22px KR,sans-serif;
+                        padding: 37px 20px 20px 20px;
+                        @media screen and (max-width: 768px){
+                            font:540  13px/15px KR,sans-serif;
+                        }
+
+                        @media screen and (max-width: 376px){
+                            font:540  10px/12px KR,sans-serif;
+                        }
+                        a {
+                            text-decoration: none;
+                            &:link ,  &:visited , &:hover, &:active {
+                                color: blue;
+                            }
+                        }
+                    }
+                }
+            }
+
+            @if(#{$class} == 'infoSectionCompany'){
+                @if(docImage){
+                    .docImage{
+                        width:100%;
+                        height:auto;
+                        position:absolute;
+                    }
+                }
+            }
+            @if(#{$class} == 'infoSectionContact' or #{$class} == 'infoSectionSupport'){
+                .text1{
+                    font:540  48px/58.8px KR,sans-serif;
+                    color: rgba(27, 14, 58, 1);
+                    padding:59px 0 0 57px;
+                    @media screen and (max-width: 768px){
+                        font:540  36px/57.8px KR,sans-serif;
+                        padding:21px 0 0 41px;
+                    }
+                    @media screen and (max-width: 376px){
+                        font:540  24px/38.8px KR,sans-serif;
+                        padding:29px 0 0 26px;
+                    }
+                    @media screen and (max-width: 320px){
+                        font:540  18px/28.8px KR,sans-serif;
+                        padding:29px 0 0 23px;
+                    }
+                }
+                .text2{
+                    font:700 24px/30px KR,sans-serif;
+                    color: rgba(27, 14, 58, 1);
+                    padding:13px 0 0 57px;
+                    width:458px;
+                    height:90px;
+                    @media screen and (max-width: 768px){
+                        font:540  18px/28.8px KR,sans-serif;
+                        padding:9px 0 0 41px;
+                    }
+                    @media screen and (max-width: 376px){
+                        font:540  14px/22.8px KR,sans-serif;
+                        padding:29px 0 0 26px;
+                        word-wrap: break-word;
+                        width: 90%;
+                    }
+                    @media screen and (max-width: 320px){
+                        font:540  12px/14.8px KR,sans-serif;
+                        padding:16px 0 0 23px;
+                        word-wrap: break-word;
+                        width: 90%;
+                        height: auto;
+                    }
+                }
+                form{
+                    width:100%;
+                    height:auto;
+                    display:flex;
+                    flex-direction: column;
+                    position: relative;
+                    .nameAndSurname{
+                        width:100%;
+                        display: flex;
+                        position:relative;
+                        @media screen and (max-width: 376px){
+                            flex-direction: column;
+                        }
+                        input{
+                            width:310px;
+                            height:48px;
+                            background: rgba(64, 162, 211, 0.1);
+                            border-radius: 20px;
+                            border:solid 1px rgba(64, 162, 211, 0.1);
+                            @media screen and (max-width: 768px){
+                                width:265px;
+                                height:34px;
+                            }
+                            @media screen and (max-width: 320px){
+                                width: 220px;
+                                height:20px;
+                            }
+                            &:required{
+                                box-shadow:none;
+                            }
+                        }
+                        .formName{
+                            margin:26px 12px 0 56px;
+                            padding:0 0 0 20px;
+                            @media screen  and (max-width: 768px) {
+                                margin: 26px 12px 0 20px;
+                                padding: 0 0 0 20px;
+                            }
+                        }
+                        .labName{
+                            position: absolute;
+                            top: 40px;
+                            left:77px;
+                            font:540  18px/22.05px KR,sans-serif;
+                            z-index:1;
+                            @media screen  and (max-width: 768px) {
+                                top: 36px;
+                                left: 41px;
+                                font:540  14px/17.05px KR,sans-serif;
+                            }
+                            @media screen  and (max-width: 376px) {
+                                top: 36px;
+                                left: 41px;
+                                font:540  10px/16.05px KR,sans-serif;
+                            }
+                            @media screen  and (max-width: 320px) {
+                                top: 29px;
+                                left: 43px;
+                                font:540  10px/12.05px KR,sans-serif;
+                            }
+                            span{
+                                color:red;
+                            }
+                        }
+                        .labsurName{
+                            position: absolute;
+                            top: 40px;
+                            right:250px;
+                            font:540  18px/22.05px KR,sans-serif;
+                            z-index:1;
+                            @media screen  and (max-width: 768px) {
+                                top: 36px;
+                                left: 340px;
+                                font:540  14px/17.05px KR,sans-serif;
+                            }
+                            @media screen  and (max-width: 376px) {
+                                top: 97px;
+                                left: 41px;
+                                font:540  10px/16.05px KR,sans-serif;
+                            }
+                            @media screen  and (max-width: 320px) {
+                                top: 77px;
+                                left: 41px;
+                                font:540  10px/12.05px KR,sans-serif;
+                            }
+                            span{
+                                color:red;
+                            }
+                        }
+                        .formSurname{
+                            margin:26px 0 0 0;
+                            padding:0 0 0 20px;
+                            @media screen  and (max-width: 376px) {
+                                margin: 26px 0 0 20px;
+                                padding: 0 0 0 20px;
+                            }
+                        }
+                    }
+
+                    .formNumber{
+                        width:655px;
+                        height:49px;
+                        border:solid 1px rgba(64, 162, 211, 0.1);
+                        background: rgba(64, 162, 211, 0.1);
+                        border-radius: 20px;
+                        margin:42px 0 0 56px;
+                        padding:0 0 0 20px;
+                        appearance:none;
+
+                        @media screen and (max-width: 768px){
+                            width: 564px;
+                            height: 35px;
+                            border: solid 1px rgba(64, 162, 211, 0.1);
+                            background: rgba(64, 162, 211, 0.1);
+                            border-radius: 20px;
+                            margin: 39px 0 0 20px;
+                            padding: 0 0 0 20px;
+                        }
+                        @media screen  and (max-width: 376px) {
+                            width: 265px;
+                            height: 33px;
+                            margin: 28px 0 0 20px;
+                        }
+                        @media screen and (max-width: 320px){
+                            width: 220px;
+                            height:20px;
+                        }
+                        &:required{
+                            box-shadow:none;
+                        }
+
+                    }
+                    .labNum{
+                        position: absolute;
+                        top: 135px;
+                        left:75px;
+                        font:540  18px/22.05px KR,sans-serif;
+                        z-index:1;
+                        @media screen and (max-width: 768px){
+                            top: 110px;
+                            left: 41px;
+                            font:540  14px/22.05px KR,sans-serif;
+                        }
+                        @media screen  and (max-width: 376px) {
+                            top: 162px;
+                            left: 41px;
+                            font:540  10px/12.05px KR,sans-serif;
+                        }
+                        @media screen  and (max-width: 320px) {
+                            top: 128px;
+                            left: 41px;
+                            font:540  10px/12.05px KR,sans-serif;
+                        }
+                        span{
+                            color:red;
+                        }
+                    }
+                    .labEmail{
+                        position: absolute;
+                        top: 227px;
+                        left:75px;
+                        font:540  18px/22.05px KR,sans-serif;
+                        z-index:1;
+                        @media screen and (max-width: 768px){
+                            top: 187px;
+                            left: 41px;
+                            font:540  14px/22.05px KR,sans-serif;
+                        }
+                        @media screen  and (max-width: 376px) {
+                            top: 227px;
+                            left: 41px;
+                            font:540  10px/12.05px KR,sans-serif;
+                        }
+                        @media screen  and (max-width: 320px) {
+                            top: 180px;
+                            left: 41px;
+                            font:540  10px/12.05px KR,sans-serif;
+                        }
+                        span{
+                            color:red;
+                        }
+                    }
+                    .formEmail{
+                        width:655px;
+                        height:49px;
+                        border:solid 1px rgba(64, 162, 211, 0.1);
+                        background: rgba(64, 162, 211, 0.1);
+                        border-radius: 20px;
+                        margin:42px 0 0 56px;
+                        padding:0 0 0 20px;
+                        appearance:none;
+
+                        @media screen and (max-width: 768px){
+                            width: 564px;
+                            height: 35px;
+                            border: solid 1px rgba(64, 162, 211, 0.1);
+                            background: rgba(64, 162, 211, 0.1);
+                            border-radius: 20px;
+                            margin: 39px 0 0 20px;
+                            padding: 0 0 0 20px;
+                        }
+                        @media screen  and (max-width: 376px) {
+                            width: 265px;
+                            height: 33px;
+                            margin: 28px 0 0 20px;
+                        }
+                        @media screen and (max-width: 320px){
+                            width: 220px;
+                            height:20px;
+                        }
+                        &:required{
+                            box-shadow:none;
+                        }
+                    }
+                    .formComment{
+                        width:635px;
+                        height:171px;
+                        border:solid 1px rgba(64, 162, 211, 0.1);
+                        background: rgba(64, 162, 211, 0.1);
+                        border-radius: 20px;
+                        margin:42px 0 0 56px;
+                        resize:none;
+                        padding:20px 20px 0 20px;
+                        @media screen and (max-width: 768px){
+                            width: 540px;
+                            height: 123px;
+                            border: solid 1px rgba(64, 162, 211, 0.1);
+                            background: rgba(64, 162, 211, 0.1);
+                            border-radius: 20px;
+                            margin: 42px 0 0 23px;
+                            resize: none;
+                            padding: 20px 20px 0 20px;
+                        }
+                        @media screen  and (max-width: 376px) {
+                            width: 245px;
+                            height: 111px;
+                            margin: 28px 0 0 20px;
+                        }
+                        @media screen  and (max-width: 320px) {
+                            width: 200px;
+                            height: 98px;
+                            margin: 28px 0 0 20px;
+                        }
+
+                        &:required{
+                            box-shadow:none;
+                        }
+                    }
+                    .labComment{
+                        position: absolute;
+                        top: 330px;
+                        left:75px;
+                        font:599  18px/22.05px KR,sans-serif;
+                        z-index:1;
+                        @media screen and (max-width: 768px){
+                            top: 277px;
+                            left: 43px;
+                            font:599  14px/16.05px KR,sans-serif;
+                        }
+                        @media screen and (max-width: 376px){
+                            top: 297px;
+                            left: 43px;
+                            font:599  10px/12.05px KR,sans-serif;
+                        }
+                        @media screen and (max-width: 320px) {
+                            top: 237px;
+                            left: 40px;
+                            font:599  10px/12.05px KR,sans-serif;
+                        }
+                        span{
+                            color:red;
+                        }
+                    }
+                    button{
+                        margin:47px 0 44px 280px;
+                        width:240px;
+                        height:62px;
+                        color:white;
+                        border:solid 1px #40A2D3;
+                        background: #40A2D3;
+                        border-radius: 20px;
+                        font:599  24px/29.4px KR,sans-serif;
+                        @media screen and (max-width: 768px){
+                            margin:47px 0 44px 225px;
+                            width:172px;
+                            height:45px;
+                            font:599  18px/28.4px KR,sans-serif;
+                        }
+                        @media screen and (max-width: 376px){
+                            margin:47px 0 44px 113px;
+                            width:106px;
+                            height:27px;
+                            font:599  12px/19.4px KR,sans-serif;
+                        }
+                        @media screen and (max-width: 320px){
+                            margin:47px 0 44px 100px;
+                            width:94px;
+                            height:23px;
+                            font:599  12px/14.4px KR,sans-serif;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//.infoSectionRates{
+//    .block{
+//        .closeBlock{
+//            .text1 { }
+//            img{}
+//        }
+//        .info{
+//            width:743px;
+//            height:auto;
+//            background: #FCFBFB;
+//            border-radius: 20px;
+//            display:flex;
+//            margin:42px 0 0 59px;
+//            .text1{
+//                width:80%;
+//                height:auto;
+//                padding:26px 0 0 46px;
+//                //word-break: break-all;
+//                word-wrap:break-word;
+//                border-right:solid .8px black;
+//            }
+//            .text2{
+//
+//                margin:auto;
+//            }
+//        }
+//    }
+//}
+
+
+
+
+
+
+
+
+

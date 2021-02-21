@@ -1,0 +1,218 @@
+.SectionSecurity{
+    max-width: 1440px;
+    min-width: 320px;
+    margin: 0 auto;
+    @media screen and (max-width: 1024px) {
+     max-width: 1024px;
+    }
+    @media screen and (max-width: 768px) {
+        max-width: 768px;
+    }
+    @media screen and (max-width: 376px) {
+        max-width: 376px;
+    }
+    @media screen and (max-width: 320px) {
+    max-width: 320px;
+    }
+    .textPagesSecurity{
+        width:100%;
+        text-align: center;
+        margin:80px 0 0 0;
+        font:540 48px/28.8px KR,sans-serif;
+        color: rgba(64, 162, 211, 1);
+        @media screen and (max-width: 1024px) {
+            font:540 36px/44.1px KR,sans-serif;
+        }
+        @media screen and (max-width: 768px) {
+            font: 540 24px/29px KR,sans-serif;
+        }
+        @media screen and (max-width: 376px) {
+            font: 540 24px/29px KR,sans-serif;
+        }
+        @media screen and (max-width: 320px) {
+            font: 540 18px/28px KR,sans-serif;
+        }
+    }
+    .text1{
+        margin:58px 0 0 222px;
+        width:1011px;
+        height:auto;
+        @media screen and (max-width: 1024px) {
+            width:823px;
+            height:auto;
+            margin:58px 0 0 120px;
+        }
+        @media screen and (max-width: 768px) {
+            width:628px;
+            font: 599 12px/14px KR,sans-serif;
+            margin:58px 0 0 70px;
+        }
+        @media screen and (max-width: 376px) {
+            width:320px;
+            font: 599 12px/14px KR,sans-serif;
+            margin:36px 0 0 33px;
+        }
+        @media screen and (max-width: 320px) {
+            width:277px;
+            font: 599 10px/14px KR,sans-serif;
+            margin:28px 0 0 33px;
+        }
+        p{
+            font:540 18px/22.05px KR,sans-serif;
+            width:100%;
+            height:auto;
+            color: rgba(27, 14, 58, 1);
+            @media screen and (max-width: 1024px) {
+                font:540 14px/17.5px KR,sans-serif;
+            }
+            @media screen and (max-width: 768px) {
+                font: 540 12px/14px KR,sans-serif;
+             }
+            @media screen and (max-width: 376px) {
+                font: 540 12px/14px KR,sans-serif;
+            }
+            @media screen and (max-width: 320px) {
+                font: 540 10px/14px KR,sans-serif;
+            }
+        }
+    }
+    .acor-container {
+        margin: 20px 0 20px 216px;
+        width:1011px;
+        height:auto;
+        @media screen and (max-width: 1024px) {
+            margin: 42px 0 20px 120px;
+            width:823px;
+            height:auto;
+        }
+        @media screen and (max-width: 768px) {
+            margin: 42px 0 20px 60px;
+            width:628px;
+            height:auto;
+        }
+        @media screen and (max-width: 376px) {
+            margin: 42px 0 20px 20px;
+            width:320px;
+            height:auto;
+        }
+        @media screen and (max-width: 320px) {
+            margin: 25px 0 20px 14px;
+            width:277px;
+            height:auto;
+        }
+        .mar{
+            width:100%;
+            height:1px;
+            border:solid 1px white;
+            margin:10px 0 80px 0;
+        }
+        .acor-body {
+            font:540 18px/22.05px KR,sans-serif;
+            @media screen and (max-width: 1024px) {
+                font:540 14px/17.5px KR,sans-serif;
+            }
+            @media screen and (max-width: 768px) {
+                font:540 12px/14.7px KR,sans-serif;
+            }
+            @media screen and (max-width: 376px) {
+                font:540 12px/14.7px KR,sans-serif;
+            }
+            width: calc(100% - 40px);
+            margin: 0 auto;
+            height: 0;
+            color: rgba(0, 0, 0, 0);
+            padding: 0 30px;
+            box-sizing: border-box;
+            transition: color 0.5s, padding 0.5s;
+            overflow: hidden;
+            p {
+                margin: 0 0 10px;
+            }
+        }
+
+        label {
+            font:540 18px/22.05px KR,sans-serif;
+            @media screen and (max-width: 1024px) {
+                font:540 14px/17.5px KR,sans-serif;
+            }
+            @media screen and (max-width: 768px) {
+                font:540 12px/14.7px KR,sans-serif;
+            }
+            @media screen and (max-width: 376px) {
+                font:540 12px/14.7px KR,sans-serif;
+            }
+            cursor: pointer;
+            background-color: white;
+            display: block;
+            border-radius:20px;
+            border: 1px solid #40A2D3;
+            padding: 15px 20px;
+            width: 100%;
+            color: rgba(27, 14, 58, 1);
+            box-sizing: border-box;
+            z-index: 100;
+            margin: 10px 0 0 10px;
+            transition: color .35s;
+            &:hover{
+                font:540  18px/22.05px KR,sans-serif;
+                @media screen and (max-width: 1024px) {
+                    font:540  14px/17.5px KR,sans-serif;
+                }
+                @media screen and (max-width: 768px) {
+                    font:540 12px/14.7px KR,sans-serif;
+                }
+                @media screen and (max-width: 376px) {
+                    font:540 12px/14.7px KR,sans-serif;
+                }
+                cursor: pointer;
+                background: #40A2D3;
+                display: block;
+                border-radius:20px;
+                border: 1px solid #40A2D3;
+                padding: 15px 20px;
+                width: 100%;
+                color: white;
+                box-sizing: border-box;
+                z-index: 100;
+                margin: 10px 0 0 10px;
+                transition: color .25s;
+            }
+            &:hover:before{
+                content: '\276F';
+                float: right;
+                transform: rotate(90deg);
+                color:rgba(0, 29, 82, 1);
+            }
+
+                &:before {
+                content: '\276F';
+                float: right;
+                transform: rotate(90deg);
+            }
+        }
+        input {
+            display: none;
+            &:checked {
+                + {
+                    label {
+                        background-color: #40A2D3;
+                        color: white;
+                        &:before {
+                            transition: transform .35s;
+                            transform: rotate(270deg);
+                            color: #1b0e3a;
+                        }
+                        + {
+                            .acor-body {
+                                height: auto;
+                                margin-top: -1px;
+                                color: black;
+                                padding: 20px 30px 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

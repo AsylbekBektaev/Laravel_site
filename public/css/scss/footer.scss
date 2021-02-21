@@ -1,0 +1,333 @@
+footer {
+    width:100%;
+    min-width: 320px;
+    background: rgba(64, 162, 211, 0.15);
+    margin: 0 auto;
+    height: 172px;
+    display: flex;
+    @media screen and (max-width: 1024px) {
+        max-width: 1024px;
+        height: 131px;
+        background: rgba(64, 162, 211, 0.15);
+    }
+    @media screen and (max-width: 768px) {
+        max-width: 768px;
+        height: 131px;
+        background: rgba(64, 162, 211, 0.15);
+    }
+    @media screen and (max-width: 376px) {
+        max-width: 376px;
+        height: 76px;
+        background: rgba(64, 162, 211, 0.15);
+    }
+    @media screen and (max-width: 320px) {
+        max-width: 320px;
+        height: 65px;
+        background: rgba(64, 162, 211, 0.15);
+    }
+    .container {
+        max-width:1440px;
+        width:100%;
+        margin:0 auto 0 auto;
+        position: relative;
+        @media screen and (max-width: 1024px) {
+            max-width: 1024px;
+            height:auto;
+        }
+        @media screen and (max-width: 768px) {
+            max-width: 768px;
+            height:auto;
+        }
+        @media screen and (max-width: 376px) {
+            max-width: 376px;
+            height:auto;
+        }
+        @media screen and (max-width: 320px) {
+            max-width: 320px;
+            height:auto;
+        }
+            .text1 {
+                position: absolute;
+                left:256px;
+                top:28px;
+                font: 599  14px/17.15px KR, sans-serif;
+                color: rgba(27, 14, 58, 1);
+                @media screen and (max-width: 1024px) {
+                    left: 0;
+                    top: 12px;
+                    margin: 12px 0 0 120px;
+                    font: 599  12px/14.7px KR, sans-serif;
+                }
+                @media screen and (max-width: 768px) {
+                    margin: 12px 0 0 75px;
+                    font: 599  12px/14.7px KR, sans-serif;
+                    left:10px;
+                    top:12px;
+                }
+                @media screen and (max-width: 376px){
+                    font: 599  9px/14.7px KR, sans-serif;
+                    left:224px;
+                    top:12px;
+                    margin:0;
+                }
+                @media screen and (max-width: 320px){
+                    left: 190px;
+                    top: 12px;
+                    font: 599  8px/12.7px KR, sans-serif;
+                }
+
+            }
+
+            .numberText {
+                position: absolute;
+                top:53px;
+                left:245px;
+                font: 599  30px/36.75px KR, sans-serif;
+                color: rgba(27, 14, 58, 1);
+                @media screen and (max-width: 1024px) {
+                    left: 0;
+                    top: 37px;
+                    margin: 10px 0 0 120px;
+                    font: 599  24px/29.4px KR, sans-serif;
+                }
+                @media screen and (max-width: 768px) {
+                    top:53px;
+                    left:10px;
+                    margin: 0 0 0 75px;
+                    font: 599  24px/25px KR, sans-serif;
+                }
+                @media screen and (max-width: 376px){
+                    font: 599  17px/28.7px KR, sans-serif;
+                    left:215px;
+                    top:32px;
+                    margin:0;
+                }
+
+                @media screen and (max-width: 320px) {
+                    font: 598 14px/22.7px KR, sans-serif;
+                    left: 180px;
+                    top: 30px;
+                }
+                a{
+                    text-decoration: none;
+                    color: rgba(27, 14, 58, 1);
+                }
+            }
+
+            .infoText {
+                position: absolute;
+                left: 252px;
+                top:102px;
+                display: flex;
+                @media screen and (max-width: 1024px) {
+                    top: 70px;
+                    left: 0;
+                    margin: 4px 0 0 120px;
+                }
+                @media screen and (max-width: 768px) {
+                    margin: 0 0 0 75px;
+                    left:10px;
+                    top:80px;
+                }
+                @media screen and (max-width: 376px) {
+                    margin: 0;
+                    left:15px;
+                    top:15px;
+                }
+
+
+                img {
+                    width: 53px;
+                    height: 45px;
+                    @media screen and (max-width: 376px) {
+                        width: 43px;
+                        height: 36px;
+                    }
+                    @media screen and (max-width: 320px) {
+                        width: 36px;
+                        height: 30px;
+                    }
+
+                }
+
+                div {
+                    margin: 5px 0 0 10px;
+                    color: rgba(27, 14, 58, 1);
+                    font: 250 14px/16.8px KR, sans-serif;
+                    @media screen and (max-width: 1024px) {
+                        font: 250 12px/14.4px KR, sans-serif;
+                        margin: 12px 0 0 10px;
+                    }
+                    @media screen and (max-width: 376px) {
+                        font: 250 11px/13.4px KR, sans-serif;
+                        margin: 6px 0 0 8px;
+                    }
+                    @media screen and (max-width: 320px) {
+                        font: 250 9px/13.4px KR, sans-serif;
+                        margin: 6px 0 0 8px;
+                    }
+                }
+            }
+
+
+            .welcome {
+                color: rgba(27, 14, 58, 1);
+                text-decoration: none;
+                font: 250 14px/16.8px KR, sans-serif;
+                position: absolute;
+                top: 56px;
+                left: 851px;
+                @media screen and (max-width: 1024px) {
+                    left: 478px;
+                    top: 40px;
+                    font: 250 12px/14.4px KR, sans-serif;
+                }
+                @media screen and (max-width: 768px) {
+                    left: 352px;
+                    top: 40px;
+                    font: 250 12px/14.4px KR, sans-serif;
+                }
+                @media screen and (max-width: 376px){
+                    display: none;
+                }
+            }
+
+            .rates {
+                color: rgba(27, 14, 58, 1);
+                text-decoration: none;
+                font: 250 14px/16.8px KR, sans-serif;
+                position: absolute;
+                top: 86px;
+                left: 851px;
+                margin-top: 10px;
+                @media screen and (max-width: 1024px) {
+                    left: 478px;
+                    top: 53px;
+                    font: 250 12px/14.4px KR, sans-serif;
+                }
+                @media screen and (max-width: 768px) {
+                    left: 352px;
+                    top: 53px;
+                    font: 250 12px/14.4px KR, sans-serif;
+                }
+                @media screen and (max-width: 376px){
+                    display: none;
+                }
+            }
+
+            .security {
+                color: rgba(27, 14, 58, 1);
+                text-decoration: none;
+                font: 250 14px/16.8px KR, sans-serif;
+                position: absolute;
+                top: 86px;
+                left: 1164px;
+                margin-top: 15px;
+                @media screen and (max-width: 1024px) {
+                    left: 791px;
+                    top: 53px;
+                    font: 250 12px/14.4px KR, sans-serif;
+                }
+                @media screen and (max-width: 768px) {
+                    left: 585px;
+                    top: 53px;
+                    font: 250 12px/14.4px KR, sans-serif;
+                }
+                @media screen and (max-width: 376px){
+                    display: none;
+                }
+
+            }
+
+            .internalRules {
+                color: rgba(27, 14, 58, 1);
+                text-decoration: none;
+                font: 250 14px/16.8px KR, sans-serif;
+                position: absolute;
+                top: 56px;
+                left: 1164px;
+                @media screen and (max-width: 1024px) {
+                    left: 791px;
+                    top: 40px;
+                    font: 250 12px/14.4px KR, sans-serif;
+                }
+                @media screen and (max-width: 768px) {
+                    left: 585px;
+                    top: 40px;
+                    font: 250 12px/14.4px KR, sans-serif;
+                }
+                @media screen and (max-width: 376px){
+                    display: none;
+                }
+            }
+
+            .aboutCompany {
+                color: rgba(27, 14, 58, 1);
+                text-decoration: none;
+                font: 250 14px/16.8px KR, sans-serif;
+                position: absolute;
+                top: 86px;
+                left: 1008px;
+                margin-top: 10px;
+                @media screen and (max-width: 1024px) {
+                    left: 635px;
+                    top: 53px;
+                    font: 250 12px/14.4px KR, sans-serif;
+                }
+                @media screen and (max-width: 768px) {
+                    left: 459px;
+                    top: 53px;
+                    font: 250 12px/14.4px KR, sans-serif;
+                }
+                @media screen and (max-width: 376px){
+                    display: none;
+                }
+            }
+
+            .support {
+                color: rgba(27, 14, 58, 1);
+                text-decoration: none;
+                font: 250 14px/16.8px KR, sans-serif;
+                position: absolute;
+                top: 116px;
+                left: 1164px;
+                margin-top: 25px;
+                @media screen and (max-width: 1024px) {
+                    left: 791px;
+                    top: 73px;
+                    font: 250 12px/14.4px KR, sans-serif;
+                }
+                @media screen and (max-width: 768px) {
+                    left: 585px;
+                    top: 73px;
+                    font: 250 12px/14.4px KR, sans-serif;
+                }
+                @media screen and (max-width: 376px){
+                    display: none;
+                }
+            }
+
+            .contacts {
+                color: rgba(27, 14, 58, 1);
+                text-decoration: none;
+                font: 250 14px/16.8px KR, sans-serif;
+                position: absolute;
+                top: 56px;
+                left: 1008px;
+                @media screen and (max-width: 1024px) {
+                    left: 635px;
+                    top: 40px;
+                    font: 250 12px/14.4px KR, sans-serif;
+                }
+                @media screen and (max-width: 768px) {
+                    left: 459px;
+                    top: 40px;
+                    font: 250 12px/14.4px KR, sans-serif;
+                }
+                @media screen and (max-width: 376px){
+                    display: none;
+                }
+            }
+
+    }
+}
